@@ -294,11 +294,6 @@
     text-align: center;
 }
 
-#main__img {
-    height: 80%;
-    width: 80%;
-}
-
 /*Mobile Responsive*/
 @media screen and (max-width: 768px) {
     .main__container {
@@ -354,21 +349,25 @@
 
 /*Service*/
 .services {
-    background: #141414;
+    background: fff;
     display: flex;
     flex-direction: column;
     align-items: center;
     height: 100vh;
+    margin-bottom: 100px;
 }
 
 .services h1 {
+    border: 2rem solid #1e00ff;
+    border-width: 1.0rem;
     background-color: #ff8177;
-    background-image: linear-gradient(to right, #ff8177 0%, 
-    #ff867a 0%, #ff8c7f 21%, #f99185 52%, #cf556c 78%, #b12a5b 
+    background-image: linear-gradient(to right, #77d2ff 0%, 
+    #ff7a7a 0%, #ff8c7f 21%, #4400ff 52%, #55cf8e 78%, #b12a5b 
     100%);
     background-size: 100%;
     margin-bottom: 5rem;
-    font-size: 2.5rem;
+    font-size: 3.5rem;
+    margin-top: 5rem;
     -webkit-background-clip: text;
     -moz-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -391,7 +390,7 @@
             rgba(0, 0, 0, 0) 0%,
             rgba(17, 17, 17, 0.6) 100%
         ),
-    url('/images/talk.png');
+    url("/images/talk.png");
     background-size: cover;
     position: relative;
     color: #fff;
@@ -403,7 +402,7 @@
             rgba(0, 0, 0, 0) 0%,
             rgba(17, 17, 17, 0.6) 100%
         ),
-    url('/images/sa.jpg');
+    url('images/sa.jpg');
 }
 
 .services h2 {
@@ -466,7 +465,7 @@
 
 /*Footer*/
 .footer__container {
-    background-color: #fff;
+    background-color: gray;
     padding: 1rem 0;
     display: flex;
     flex-direction: column;
@@ -609,7 +608,7 @@
     width: 100%;
     background-image: linear-gradient(
         rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
-        url('/images/banner.jpg');
+        url('images/banner.jpg');
         background-position: center;
         background-size: cover;
         position: absolute;
@@ -695,4 +694,14 @@
 }
 #register {
     left: 450px;
+}
+
+.showcase  video {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.8;
 }
